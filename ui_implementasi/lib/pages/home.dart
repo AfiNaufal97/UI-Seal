@@ -29,12 +29,10 @@ class Home extends StatelessWidget {
                const SizedBox(
                 height: 40,
               ),
-              GestureDetector(
-                onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => Detail())),
-                child: Hero(
-                  tag: 'A',
-                  transitionOnUserGestures: true,
-                  child: columnCard()))
+              Hero(
+                tag: 'A',
+                transitionOnUserGestures: true,
+                child: columnCard(context))
             ],
           ),
         ),
